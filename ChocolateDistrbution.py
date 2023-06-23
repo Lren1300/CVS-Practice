@@ -1,29 +1,30 @@
 """
-Chocolate distribution problem:
-    Given an array of N integers where each value
-    represents the number of chocolates in a packet.
-    Each packet can have a variable number of
-    chocolates. There are m students.
+    Chocolate distribution problem:
+        Given an array of N integers where each value
+        represents the number of chocolates in a packet.
+        Each packet can have a variable number of
+        chocolates. There are m students.
 
-    The task is to distribute chocolate packets such
-    that:
-        -Each student gets one packet
-        -The difference between the number of chocolates
+        The task is to distribute chocolate packets such
+        that:
+            -Each student gets one packet
+            -The difference between the number of chocolates
         in the packet with maximum chocolates and the
         packet with minimum chocolates is minimum
 """
 
 
-"""
-choco_dist: function that contains the logic to solve the 
-given problem
-
-Args:
-    -packets: given array of values of the 'packets of chocolate'
-    -n: number of packets/size of the array
-    -m: number of students
-"""
 def choco_dist(packets, n, s):
+    """
+        choco_dist: function that contains the logic to solve the
+        given problem
+
+        Args:
+            packets: given array of values of the 'packets of chocolate'
+            n: number of packets/size of the array
+            s: number of students
+    """
+
     # use the baked in sort() function to sort the packets in ascending order
     packets.sort()
 
