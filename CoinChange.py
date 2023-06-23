@@ -5,6 +5,7 @@ Coin Change Problem
     how many ways can we make the change?
 """
 
+
 """
 coin_change function: recursive function that gives the number of possible 
 combinations of the sum to a certain number in a set of numbers.
@@ -13,17 +14,17 @@ Args:
     -c = set of ascending numbers that represent our coins
     -n = number of coins in C
     -s = number we wish the change to add up too
+
+Function influenced by GeeksForGeeks recursive tree explanation 
+at https://www.geeksforgeeks.org/coin-change-dp-7/
 """
-
-
 def coin_change(c, n, s):
-    # if the total we are trying to get it 0
-    # there is 1 solution, 0 coins.
+    # if the total becomes 0 it is a solution
     if s == 0:
         return 1
 
-    # If total is less than 0 then no
-    # solution exists (cant have negative coins)
+    # If total is less than 0 then the
+    # solution does not exist (cant have negative coins)
     if s < 0:
         return 0
 

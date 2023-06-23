@@ -13,6 +13,7 @@ Chocolate distribution problem:
         packet with minimum chocolates is minimum
 """
 
+
 """
 choco_dist: function that contains the logic to solve the 
 given problem
@@ -22,10 +23,8 @@ Args:
     -n: number of packets/size of the array
     -m: number of students
 """
-
-
 def choco_dist(packets, n, s):
-    # use the baked in sort() function to sort the packets in asc order
+    # use the baked in sort() function to sort the packets in ascending order
     packets.sort()
 
     # variable made to track the minimum difference throughout the loop
@@ -50,15 +49,14 @@ def choco_dist(packets, n, s):
             for j in range(s):
                 curr_diff_arr[j] = (packets[i + j])
 
-    # once the loop is over, the minimum distance will be stored
-    # and the problem is now complete
+    # once the loop is over, the minimum distance and array
+    # will be stored, completing the problem
     print("The minimum difference is: " + str(curr_diff))
     print("The packets given were: " + str(curr_diff_arr))
 
 
-# Driver code to test function
-if __name__ == '__main__':
-    packets = [8, 2, 3, 4, 9, 11, 18]
-    s = 4
-    n = len(packets)
-    choco_dist(packets, n, s)
+# Driver code to test above function
+packets = [8, 2, 3, 4, 9, 11, 18]
+s = 4
+n = len(packets)
+choco_dist(packets, n, s)
