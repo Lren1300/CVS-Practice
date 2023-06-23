@@ -1,7 +1,7 @@
 """
 Coin Change Problem
     Given a value N, if we want to make change for N cents,
-    and we have an infinite supply of change C = {C1, C2, ... , Cnc},
+    and we have an infinite supply of change C = {C1, C2, ... , Cm},
     how many ways can we make the change?
 """
 
