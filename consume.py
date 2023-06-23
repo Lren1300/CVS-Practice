@@ -71,7 +71,7 @@ def consume_response():
         # invoke exit logging
         resp_time = time.time() - start_time
         loggingdict.update({"respTime": str(round(resp_time, 3)) + "secs"})
-
+        entryexiterrorlogging.exitEventLog(loggingdict, "CVSEVENT")
 
 # Driver Code to test above function
 consume_response()
