@@ -51,7 +51,7 @@ END
 
 connection.commit()
 
-# Now query the rows back
+# Now query the rows back to test if the data persisted
 for row in cursor.execute('select description, done from todoitem'):
     if (row[1]):
         print(row[0], "is done")
